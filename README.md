@@ -5,4 +5,8 @@
 + **the second edition aims to use generics and supports dynamic resizing mechanism**
 ## 2. Stack and queue
 ## 3. Linkedlist
+<<<<<<< HEAD
 ## 4. Linkedlist and recursion
+=======
+## 4. Linkedlist and recursion
+>>>>>>> 873761c5bbe7908c72a1ea45f201a73cab216ac5
