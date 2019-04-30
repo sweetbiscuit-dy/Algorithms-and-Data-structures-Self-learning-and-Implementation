@@ -4,13 +4,7 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc0b7f9d-fa32-46f7-b1f2-30cc3c93fbec" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xdu/dingyu/ArrayFirstEdition.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xdu/dingyu/ArrayTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Array.java" beforeDir="false" />
-    </list>
+    <list default="true" id="fc0b7f9d-fa32-46f7-b1f2-30cc3c93fbec" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,8 +27,8 @@
       <file leaf-file-name="ArrayFirstEdition.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/xdu/dingyu/ArrayFirstEdition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="184" column="13" selection-start-line="184" selection-start-column="13" selection-end-line="184" selection-end-column="13" />
+            <state relative-caret-position="499">
+              <caret line="185" column="7" lean-forward="true" selection-start-line="185" selection-start-column="7" selection-end-line="185" selection-end-column="7" />
               <folding>
                 <element signature="e#2465#2466#0" expanded="true" />
                 <element signature="e#2493#2494#0" expanded="true" />
@@ -100,7 +94,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
@@ -232,15 +226,15 @@
       <option name="presentableId" value="Default" />
       <updated>1556526826070</updated>
       <workItem from="1556526827781" duration="8811000" />
-      <workItem from="1556590566984" duration="2392000" />
+      <workItem from="1556590566984" duration="2393000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11203000" />
+    <option name="totallyTimeSpent" value="11204000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -326,8 +320,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/xdu/dingyu/ArrayFirstEdition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="184" column="13" selection-start-line="184" selection-start-column="13" selection-end-line="184" selection-end-column="13" />
+        <state relative-caret-position="499">
+          <caret line="185" column="7" lean-forward="true" selection-start-line="185" selection-start-column="7" selection-end-line="185" selection-end-column="7" />
           <folding>
             <element signature="e#2465#2466#0" expanded="true" />
             <element signature="e#2493#2494#0" expanded="true" />
