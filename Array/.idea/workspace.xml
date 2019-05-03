@@ -4,7 +4,10 @@
     <option name="GROUP_BY_SEVERITY" value="true" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc0b7f9d-fa32-46f7-b1f2-30cc3c93fbec" name="Default" comment="" />
+    <list default="true" id="fc0b7f9d-fa32-46f7-b1f2-30cc3c93fbec" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/xdu/dingyu/ArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xdu/dingyu/ArrayTest.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,28 +27,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArrayFirstEdition.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ArrayFirstEdition.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/xdu/dingyu/ArrayFirstEdition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="499">
-              <caret line="185" column="7" lean-forward="true" selection-start-line="185" selection-start-column="7" selection-end-line="185" selection-end-column="7" />
+            <state relative-caret-position="345">
+              <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
               <folding>
                 <element signature="e#2465#2466#0" expanded="true" />
                 <element signature="e#2493#2494#0" expanded="true" />
                 <element signature="e#3510#3511#0" expanded="true" />
                 <element signature="e#3539#3540#0" expanded="true" />
                 <element signature="e#3567#3568#0" expanded="true" />
-                <element signature="e#3604#3605#0" expanded="true" />
+                <element signature="e#3603#3604#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArrayTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ArrayTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/xdu/dingyu/ArrayTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="115">
+              <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -80,8 +83,8 @@
         <option value="$PROJECT_DIR$/src/com/XDU/dingyu/Array.java" />
         <option value="$PROJECT_DIR$/src/com/xd/dingyu/dingyu/Array.java" />
         <option value="$PROJECT_DIR$/src/com/xdu/dingyu/Array.java" />
-        <option value="$PROJECT_DIR$/src/com/xdu/dingyu/ArrayTest.java" />
         <option value="$PROJECT_DIR$/src/com/xdu/dingyu/ArrayFirstEdition.java" />
+        <option value="$PROJECT_DIR$/src/com/xdu/dingyu/ArrayTest.java" />
       </list>
     </option>
   </component>
@@ -94,7 +97,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-10" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
@@ -105,6 +108,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -127,9 +133,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -226,12 +229,13 @@
       <option name="presentableId" value="Default" />
       <updated>1556526826070</updated>
       <workItem from="1556526827781" duration="8811000" />
-      <workItem from="1556590566984" duration="2393000" />
+      <workItem from="1556590566984" duration="3004000" />
+      <workItem from="1556874495369" duration="234000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11204000" />
+    <option name="totallyTimeSpent" value="12049000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -260,11 +264,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39917126" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,6 +278,35 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Array.iml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xdu/dingyu/ArrayTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xdu/dingyu/ArrayFirstEdition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4278">
+          <caret line="186" column="14" selection-start-line="186" selection-start-column="14" selection-end-line="186" selection-end-column="14" />
+          <folding>
+            <element signature="e#2465#2466#0" expanded="true" />
+            <element signature="e#2493#2494#0" expanded="true" />
+            <element signature="e#3510#3511#0" expanded="true" />
+            <element signature="e#3539#3540#0" expanded="true" />
+            <element signature="e#3567#3568#0" expanded="true" />
+            <element signature="e#3603#3604#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Array.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
@@ -298,7 +331,7 @@
             <element signature="e#3510#3511#0" expanded="true" />
             <element signature="e#3539#3540#0" expanded="true" />
             <element signature="e#3567#3568#0" expanded="true" />
-            <element signature="e#3604#3605#0" expanded="true" />
+            <element signature="e#3603#3604#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -311,25 +344,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/xdu/dingyu/ArrayTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/xdu/dingyu/ArrayFirstEdition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="185" column="7" lean-forward="true" selection-start-line="185" selection-start-column="7" selection-end-line="185" selection-end-column="7" />
+        <state relative-caret-position="345">
+          <caret line="15" column="7" lean-forward="true" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
           <folding>
             <element signature="e#2465#2466#0" expanded="true" />
             <element signature="e#2493#2494#0" expanded="true" />
             <element signature="e#3510#3511#0" expanded="true" />
             <element signature="e#3539#3540#0" expanded="true" />
             <element signature="e#3567#3568#0" expanded="true" />
-            <element signature="e#3604#3605#0" expanded="true" />
+            <element signature="e#3603#3604#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/xdu/dingyu/ArrayTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
         </state>
       </provider>
     </entry>

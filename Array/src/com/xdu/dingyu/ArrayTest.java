@@ -3,6 +3,7 @@ import java.util.Random;
 
 public class ArrayTest {
     public static void main(String[] args) {
+        //************************test of ArrayFirstEdition************************//
         ArrayFirstEdition array1 = new ArrayFirstEdition(16);
         Random random = new Random();
 
