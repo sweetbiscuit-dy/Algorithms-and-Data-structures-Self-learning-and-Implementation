@@ -1,15 +1,18 @@
 package com.xdu.dingyu;
+
+import java.security.DrbgParameters;
+
 /**
- * ArrayFirstEdition class. This is the very prototype of the array implemented by myself.
- * Only very basic fields and functions are added to the class.
+ * The second edition is based on the first edition. Generics and dynamic resizing mechanism
  * @author Dingyu
- * @date 2019/4/29
+ * @date 2019/5/3
  */
 
-public class ArrayFirstEdition {
+public class ArraySecondEdition<E> {
     /**
      * capacity
      * the total slots assigned to the array while initializing
+     * now supports generics
      */
     private int capacity;
 
@@ -23,14 +26,14 @@ public class ArrayFirstEdition {
      * array
      * the real array
      */
-    private int[] array;
+    private E[] array;
 
     /**
      * construction method with an argument
      * @param capacity the initial slots assigned to the array, decided by the user
      */
-    public ArrayFirstEdition(int capacity) {
-        array = new int[capacity];
+    public ArraySecondEdition(int capacity) {
+        array = (E[])new Object[capacity];
         this.capacity = capacity;
         this.size = 0;
     }
@@ -39,7 +42,7 @@ public class ArrayFirstEdition {
      * construction method without an argument
      * the default capacity is 10
      */
-    public ArrayFirstEdition() {
+    public ArraySecondEdition() {
         this(10);
     }
 
@@ -72,31 +75,45 @@ public class ArrayFirstEdition {
     }
 
     /**
-     * insert an element e into the given position indicated by the argument index
+     * insert an element e into the given position indicated by the argument index.
+     * now supports the dynamic resizing mechanism.
+     * when the size of an array reachs to its capacity, it will trigger the dynamic
+     * resizing mechanism. which is, in detail, the new capacity would be twice of
+     * its former capacity.
      * @param index the position of insertion
      * @param e the element to be inserted to the certain position
      */
-    public void add(int index, int e) {
-        if(isFull()) {
-            throw new IllegalArgumentException("the array is already");
-        }
-
-        if(index < 0 || index > size) {
+    public void add(int index, E e) {
+        if (index < 0 || index > size) {
             throw new IllegalArgumentException("index out of bound");
         }
-
-        for(int i = size - 1; i >= index; i--) {
+        if(size == capacity) {
+            resize(2 * capacity);
+        }
+        for (int i = size - 1; i >= index; i--) {
             array[i + 1] = array[i];
         }
         array[index] = e;
         size++;
     }
 
+    private void resize(int newCapacity) {
+        E[] tempArray = (E[]) new Object[newCapacity];
+
+        for(int i = 0; i < size; i++) {
+            tempArray[i] = array[i];
+        }
+
+        array = tempArray;
+        capacity = newCapacity;
+        tempArray = null;
+    }
+
     /**
      * add an element to the head of the array
      * @param e an element to be inserted to the head of the array
      */
-    public void addFirst(int e) {
+    public void addFirst(E e) {
         add(0, e);
     }
 
@@ -104,7 +121,7 @@ public class ArrayFirstEdition {
      * add an element to the tail of the array
      * @param e an element to be inserted to the tail of the array
      */
-    public void addLast(int e) {
+    public void addLast(E e) {
         add(size, e);
     }
 
@@ -112,15 +129,20 @@ public class ArrayFirstEdition {
      * remove an element according the the given index
      * @param index the position of the array where the corresponding element is removed
      */
-    public int remove(int index) {
-        if(index < 0 || index >= size) {
+    public E remove(int index) {
+        if(index < 0 || index > size) {
             throw new IllegalArgumentException("index out of bound");
         }
 
-        int ret = array[index];
+        E ret = array[index];
 
         if(isEmpty()) {
             throw new IllegalArgumentException("the array is already empty");
+        }
+
+        //this design is to avoid the jitter of the complexity
+        if(size <= capacity / 4) {
+            resize(capacity / 2);
         }
 
         for(int i = index; i < size; i++) {
@@ -130,12 +152,20 @@ public class ArrayFirstEdition {
         return ret;
     }
 
+    public void removeFirst() {
+        remove(0);
+    }
+
+    public void removeLast() {
+        remove(size);
+    }
+
     /**
      * return an element according to the given index
      * @param index the position of the array where the corresponding element is returned
      * @return the corresponding element
      */
-    public int get(int index) {
+    public E get(int index) {
         if(index < 0 || index >= size) {
             throw new IllegalArgumentException("index out of bound");
         }
@@ -143,11 +173,11 @@ public class ArrayFirstEdition {
         return array[index];
     }
 
-    public int getFirst() {
+    public E getFirst() {
         return get(0);
     }
 
-    public int getLast() {
+    public E getLast() {
         return get(size - 1);
     }
 
@@ -156,7 +186,7 @@ public class ArrayFirstEdition {
      * @param index the position of the element whose value is going to be altered
      * @param e the new value
      */
-    public void set(int index, int e) {
+    public void set(int index, E e) {
         if(index < 0 || index >= size) {
             throw new IllegalArgumentException("index illegal");
         }
@@ -171,7 +201,7 @@ public class ArrayFirstEdition {
      */
     public boolean contains(int e) {
         for(int i = 0; i < size; i++) {
-            if(array[i] == e) {
+            if(array[i].equals(e)) {
                 return true;
             }
         }
@@ -184,9 +214,9 @@ public class ArrayFirstEdition {
      * @param e element
      * @return the index of e if it is in the array, -1 if it is not
      */
-    public int find(int e) {
+    public int find(E e) {
         for(int i = 0; i < size; i++) {
-            if(array[i] == e) {
+            if(array[i].equals(e)) {
                 return i;
             }
         }
