@@ -9,10 +9,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc0b7f9d-fa32-46f7-b1f2-30cc3c93fbec" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Array/com/xdu/dingyu/ArraySecondEdition.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Array/com/xdu/dingyu/ArraySecondEdition.class" afterDir="false" />
-    </list>
+    <list default="true" id="fc0b7f9d-fa32-46f7-b1f2-30cc3c93fbec" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,8 +41,8 @@
       <file leaf-file-name="ArraySecondEdition.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/xdu/dingyu/ArraySecondEdition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="140" column="9" lean-forward="true" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
+            <state relative-caret-position="336">
+              <caret line="142" column="26" lean-forward="true" selection-start-line="142" selection-start-column="26" selection-end-line="142" selection-end-column="26" />
               <folding>
                 <element signature="e#1460#1461#0" expanded="true" />
                 <element signature="e#1499#1500#0" expanded="true" />
@@ -125,7 +122,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="width" value="980" />
     <option name="height" value="1040" />
@@ -265,15 +262,16 @@
       <workItem from="1556875993094" duration="434000" />
       <workItem from="1556887766150" duration="6131000" />
       <workItem from="1556955583865" duration="807000" />
-      <workItem from="1557024156376" duration="800000" />
+      <workItem from="1557024156376" duration="804000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20903000" />
+    <option name="totallyTimeSpent" value="20907000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1933" height="1053" extended-state="7" />
+    <frame x="-6" y="-6" width="1933" height="1053" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -547,8 +545,8 @@
     <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/lang/Object.java" />
     <entry file="file://$PROJECT_DIR$/src/com/xdu/dingyu/ArraySecondEdition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="140" column="9" lean-forward="true" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
+        <state relative-caret-position="336">
+          <caret line="142" column="26" lean-forward="true" selection-start-line="142" selection-start-column="26" selection-end-line="142" selection-end-column="26" />
           <folding>
             <element signature="e#1460#1461#0" expanded="true" />
             <element signature="e#1499#1500#0" expanded="true" />
