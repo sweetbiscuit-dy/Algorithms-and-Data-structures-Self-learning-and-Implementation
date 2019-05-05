@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact name="Array:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Array_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Array.jar">
+        <element id="module-output" name="Array" />
+      </element>
+    </root>
+  </artifact>
+</component>
