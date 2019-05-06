@@ -9,9 +9,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fc0b7f9d-fa32-46f7-b1f2-30cc3c93fbec" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/xdu/dingyu/ArraySecondEdition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/xdu/dingyu/ArraySecondEdition.java" afterDir="false" />
-    </list>
+    <list default="true" id="fc0b7f9d-fa32-46f7-b1f2-30cc3c93fbec" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -43,8 +41,8 @@
       <file leaf-file-name="ArraySecondEdition.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/xdu/dingyu/ArraySecondEdition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="156" column="5" lean-forward="true" selection-start-line="156" selection-start-column="5" selection-end-line="156" selection-end-column="5" />
+            <state relative-caret-position="367">
+              <caret line="86" column="23" lean-forward="true" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
               <folding>
                 <element signature="e#1460#1461#0" expanded="true" />
                 <element signature="e#1499#1500#0" expanded="true" />
@@ -281,12 +279,12 @@
       <workItem from="1556887766150" duration="6131000" />
       <workItem from="1556955583865" duration="807000" />
       <workItem from="1557024156376" duration="804000" />
-      <workItem from="1557115170850" duration="50000" />
+      <workItem from="1557115170850" duration="217000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20957000" />
+    <option name="totallyTimeSpent" value="21124000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1933" height="1053" extended-state="6" />
@@ -617,8 +615,8 @@
     <entry file="jar://C:/Program Files/Java/jdk-9.0.4/lib/src.zip!/java.base/java/lang/Object.java" />
     <entry file="file://$PROJECT_DIR$/src/com/xdu/dingyu/ArraySecondEdition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="156" column="5" lean-forward="true" selection-start-line="156" selection-start-column="5" selection-end-line="156" selection-end-column="5" />
+        <state relative-caret-position="367">
+          <caret line="86" column="23" lean-forward="true" selection-start-line="86" selection-start-column="23" selection-end-line="86" selection-end-column="23" />
           <folding>
             <element signature="e#1460#1461#0" expanded="true" />
             <element signature="e#1499#1500#0" expanded="true" />
