@@ -152,12 +152,13 @@ public class ArraySecondEdition<E> {
         return ret;
     }
 
-    public void removeFirst() {
-        remove(0);
+    public E removeFirst() {
+        return remove(0);
     }
 
-    public void removeLast() {
-        remove(size);
+    public E removeLast() {
+
+        return remove(size);
     }
 
     /**
