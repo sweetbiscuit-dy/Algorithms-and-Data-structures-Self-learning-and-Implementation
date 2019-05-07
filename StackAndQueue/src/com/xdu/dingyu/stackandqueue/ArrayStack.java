@@ -11,14 +11,14 @@ import com.xdu.dingyu.ArraySecondEdition;
  */
 
 public class ArrayStack<E> implements Stack<E> {
-    ArraySecondEdition ase;
+    ArraySecondEdition<E> ase;
 
     public ArrayStack(int capacity) {
-        ase = new ArraySecondEdition(capacity);
+        ase = new ArraySecondEdition<>(capacity);
     }
 
     public ArrayStack() {
-        ase = new ArraySecondEdition();
+        ase = new ArraySecondEdition<>();
     }
 
     @Override
@@ -33,7 +33,7 @@ public class ArrayStack<E> implements Stack<E> {
 
     @Override
     public E peek() {
-        return null;
+        return ase.getLast();
     }
 
     @Override
@@ -48,5 +48,20 @@ public class ArrayStack<E> implements Stack<E> {
 
     public int getCapacity() {
         return ase.getCapacity();
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+
+        sb.append("Stack : ").append("[");
+
+        for(int i = 0; i < ase.getSize() - 1; i++) {
+            sb.append(ase.get(i)).append(", ");
+        }
+
+        sb.append(ase.get(ase.getSize() - 1)).append("] TOP HERE");
+
+        return sb.toString();
     }
 }
