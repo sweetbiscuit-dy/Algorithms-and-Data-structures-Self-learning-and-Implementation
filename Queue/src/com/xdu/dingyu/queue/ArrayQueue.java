@@ -1,6 +1,5 @@
 package com.xdu.dingyu.queue;
 
-
 import com.xdu.dingyu.ArraySecondEdition;
 
 /**
@@ -12,18 +11,13 @@ import com.xdu.dingyu.ArraySecondEdition;
 public class ArrayQueue<E> implements Queue<E> {
     private ArraySecondEdition<E> ase;
     private int front;
-    //private int end;
 
     public ArrayQueue(int capacity) {
         ase = new ArraySecondEdition<>(capacity);
-        //front = 0;
-        //end = 0;
     }
 
     public ArrayQueue() {
         ase = new ArraySecondEdition<>();
-        //front = 0;
-        //end = 0;
     }
 
     @Override
@@ -33,7 +27,6 @@ public class ArrayQueue<E> implements Queue<E> {
 
     @Override
     public E dequeue() {
-        //front++;
         return ase.removeFirst();
     }
 

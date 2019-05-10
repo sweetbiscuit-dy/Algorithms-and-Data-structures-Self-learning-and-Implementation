@@ -25,5 +25,18 @@ public class Test {
 
         aq.dequeue();
         System.out.println(aq.toString());
+
+        System.out.println("---------------------------------------------------------------------------------------------------------------------------------");
+
+        LoopQueue<Student> lq = new LoopQueue<>(5);
+        lq.enqueue(s1);
+        lq.enqueue(s2);
+        lq.enqueue(s3);
+        lq.enqueue(s4);
+        lq.enqueue(s5);
+        System.out.println(lq);
+
+        lq.enqueue(new Student("Mark", 27, 1006));
+        System.out.println(lq);
     }
 }
