@@ -8,6 +8,7 @@
 
 + **Stack is implemented with Array(Second edition) **
 + **first edition of Queue is implemented in 2019/5/10 in the lab, the loop Queue will be implemented in the next step**
++ **the loop queue is implemented and tested(2019/5/11 afternoon in the lab)**
 
 ## 3. Linkedlist
 ## 4. Linkedlist and recursion
