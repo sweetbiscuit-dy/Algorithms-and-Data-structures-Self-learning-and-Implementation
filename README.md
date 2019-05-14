@@ -11,6 +11,9 @@
 + **the loop queue is implemented and tested(2019/5/11 afternoon in the lab)**
 
 ## 3. Linkedlist
+
++ **linked list finished in 2019/5/14 night in the lab. basic functions are all implemented**
+
 ## 4. Linkedlist and recursion
 ## 4. Linkedlist and recursion
 
