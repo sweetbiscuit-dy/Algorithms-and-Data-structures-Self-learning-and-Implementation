@@ -131,7 +131,7 @@ public class Linkedlist<E> {
         return deletedValue;
     }
 
-    public E deleteFirdt() {
+    public E deleteFirst() {
         return delete(0);
     }
 
@@ -139,7 +139,7 @@ public class Linkedlist<E> {
         return delete(size - 1);
     }
 
-    public Node get(int index) {
+    public E get(int index) {
         if(index < 0 || index > size) {
             throw new IllegalArgumentException("index is illegal");
         }
@@ -149,15 +149,15 @@ public class Linkedlist<E> {
                 currentNode = currentNode.next;
             }
 
-            return currentNode;
+            return currentNode.e;
         }
     }
 
-    public Node getFirst() {
+    public E getFirst() {
         return get(0);
     }
 
-    public Node getLast() {
+    public E getLast() {
         return get(size);
     }
 

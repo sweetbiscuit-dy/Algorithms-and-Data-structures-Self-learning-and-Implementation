@@ -26,5 +26,16 @@ public class Test {
         System.out.println(as);
         System.out.println(String.format("the capacity is : %d", as.getCapacity()));
         System.out.println(String.format("the size is : %d", as.getSize()));
+
+        System.out.println("-------------------------------------------------------------------------------");
+
+        LinkedStack<Student> ls = new LinkedStack<>();
+        ls.push(s1);
+        ls.push(s2);
+        ls.push(s3);
+        ls.push(s4);
+        ls.push(s5);
+
+        System.out.println(ls);
     }
 }

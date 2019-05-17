@@ -13,6 +13,7 @@
 ## 3. Linkedlist
 
 + **linked list finished in 2019/5/14 night in the lab. basic functions are all implemented**
++ **implement stack and queue using linked list (2019/5/15 night in the lab)**
 
 ## 4. Linkedlist and recursion
 ## 4. Linkedlist and recursion

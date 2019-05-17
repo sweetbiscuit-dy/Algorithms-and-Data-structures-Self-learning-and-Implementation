@@ -7,6 +7,7 @@ package com.xdu.dingyu.queue;
  */
 public class Test {
     public static void main(String[] args) {
+        System.out.println("--------------------------------------------------------Array Queue Test-------------------------------------------------------------------------");
         Student s1 = new Student("Bob", 22, 1000);
         Student s2 = new Student("Pony", 23, 1002);
         Student s3 = new Student("Jack", 24, 1003);
@@ -26,7 +27,7 @@ public class Test {
         aq.dequeue();
         System.out.println(aq.toString());
 
-        System.out.println("---------------------------------------------------------------------------------------------------------------------------------");
+        System.out.println("-----------------------------------------------------Loop Queue Test----------------------------------------------------------------------------");
 
         LoopQueue<Student> lq = new LoopQueue<>(5);
         lq.enqueue(s1);
@@ -38,5 +39,16 @@ public class Test {
 
         lq.enqueue(new Student("Mark", 27, 1006));
         System.out.println(lq);
+
+
+        System.out.println("-------------------------------------------------------Linkedlist Queue Test--------------------------------------------------------------------------");
+        Student[] stuArray = new Student[5];
+        stuArray[0] = s1;
+        stuArray[1] = s2;
+        stuArray[2] = s3;
+        stuArray[3] = s4;
+        stuArray[4] = s5;
+        LinkedQueue<Student> llq = new LinkedQueue<>(stuArray);
+        System.out.println(llq);
     }
 }
