@@ -17,3 +17,10 @@
 + **all left work are finished in 2019/5/17 afternoon in the lab**
 
 ## 4. Linkedlist and recursion
+
++ **this part is not suitable for making demonstration coding due to the unspecified demands**
++ **the relevant puzzles could be found in Leetcode**
+
+## 5. Binary Search Tree
+
++ 
