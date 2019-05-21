@@ -5,11 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="503ab074-a488-48d9-b7b3-cb88ecd1cfbd" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xdu/dingyu/binarysearchtree/BinarySearchTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xdu/dingyu/binarysearchtree/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/xdu/dingyu/binarysearchtree/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Queue/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Queue/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,8 +20,8 @@
       <file leaf-file-name="BinarySearchTree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/xdu/dingyu/binarysearchtree/BinarySearchTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="262" column="127" selection-start-line="262" selection-start-column="127" selection-end-line="262" selection-end-column="127" />
+            <state relative-caret-position="-247">
+              <caret line="216" lean-forward="true" selection-start-line="216" selection-end-line="216" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#912#913#0" expanded="true" />
@@ -262,12 +257,12 @@
       <updated>1558084659484</updated>
       <workItem from="1558084661979" duration="683000" />
       <workItem from="1558147796027" duration="24011000" />
-      <workItem from="1558361101671" duration="10062000" />
+      <workItem from="1558361101671" duration="10839000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34756000" />
+    <option name="totallyTimeSpent" value="35533000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1933" height="1053" extended-state="6" />
@@ -445,8 +440,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/xdu/dingyu/binarysearchtree/BinarySearchTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="262" column="127" selection-start-line="262" selection-start-column="127" selection-end-line="262" selection-end-column="127" />
+        <state relative-caret-position="-247">
+          <caret line="216" lean-forward="true" selection-start-line="216" selection-end-line="216" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#912#913#0" expanded="true" />

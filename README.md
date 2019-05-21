@@ -23,4 +23,5 @@
 
 ## 5. Binary Search Tree
 
-+ 
++ all three DFS traverse methods(pre-order, in-order, post-order) are implemented both in recursive and non-recursive. (2019/5/21)
++ the BFS(Breadth First Search) method is also implemented using the queue.(2019/5/21)
