@@ -1,7 +1,6 @@
 package com.xdu.dingyu.binarysearchtree;
 
 import java.util.LinkedList;
-import java.util.Queue;
 import java.util.Stack;
 
 /**
