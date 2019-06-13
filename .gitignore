@@ -1,7 +1,6 @@
 # Algorithm
-Algorithm/.idea
-Algorithm/Sort/.idea/
-Algorithm/lib/
-Algorithm/out/
-Algorithm/test/
-Algorithm/Sort.iml
+./Algorithm/Sort/.idea/
+./Algorithm/lib/
+./Algorithm/out/
+./Algorithm/test/
+./Algorithm/Sort.iml
