@@ -3,10 +3,7 @@ package utility;
 import java.lang.reflect.Array;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
-import java.util.Locale;
 import java.util.Random;
-
-import static java.lang.Class.forName;
 
 public class Utility {
     public static boolean less(Comparable a, Comparable b) {
@@ -80,12 +77,6 @@ public class Utility {
             e.printStackTrace();
         }
 
-        if(result == null) {
-            System.out.println("result is null");
-        }
-        else {
-            System.out.println("result is not null");
-        }
         return result;
     }
 

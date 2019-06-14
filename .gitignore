@@ -1,14 +1,16 @@
 # Algorithm
+/Algorithm/.idea/
 /Algorithm/Sort/.idea/
-/Algorithm/lib/
-/Algorithm/out/
-/Algorithm/test/
+/Algorithm/Sort/Sort.iml
+/Algorithm/Sort/lib/
+/Algorithm/Sort/out/
+/Algorithm/Sort/test/
 /Algorithm/Sort.iml
 
 # Array
 /Array/.idea/
 /Array/out/
-/Array/src/META_INF/
+/Array/src/META-INF/
 /Array/Array.iml
 
 # BinarySearchTree
@@ -31,3 +33,6 @@
 /StackAndQueue/.idea/
 /StackAndQueue/out/
 /StackAndQueue/StackAndQueue.iml
+
+# testignore
+/testignore/
