@@ -5,6 +5,11 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Random;
 
+/**
+ * this is an utility class, it contains some functions that would be commonly used by many sorting algorithms.
+ * @author Ding Yu
+ * @date 2019/6/14
+ */
 public class Utility {
     public static boolean less(Comparable a, Comparable b) {
         return a.compareTo(b) < 0;
@@ -57,7 +62,17 @@ public class Utility {
         return extremeIndex;
     }
 
-    public static <T> T[] generateIntegerTestArray(int arrayLength, int testLowerRange,
+    /**
+     * generate an array for the performance test of a particular sorting algorithm.
+     * @param arrayLength
+     * @param testLowerRange
+     * @param testUpperRange
+     * @param tClass
+     * @param parameterTypes
+     * @param <T>
+     * @return
+     */
+    public static <T> T[] generateTestArray(int arrayLength, int testLowerRange,
                                                    int testUpperRange, Class<T> tClass, Class<?> parameterTypes) {
 
         T[] result = (T[])Array.newInstance(tClass, arrayLength);
@@ -80,6 +95,35 @@ public class Utility {
         return result;
     }
 
+    /**
+     * check if the array is sorted in the expected order.
+     * @param array array to be checked.
+     * @param ascending the order in which we expect the array to be.
+     * @return true: as expected. false: not in the expect order.
+     */
+    public static boolean isSorted(Comparable[] array, boolean ascending) {
+        for(int i = 0; i < array.length - 1; i++) {
+            if(ascending) {
+                if(!less(array[i], array[i + 1])) {
+                    return false;
+                }
+            }
+            else {
+                if(less(array[i], array[i + 1])) {
+                    return false;
+                }
+            }
+        }
+
+        return true;
+    }
+
+    /**
+     * it shows the running time of a sorting algorithm.
+     * @param beginTime
+     * @param endTime
+     * @return
+     */
     public static String performanceEvaluate(Long beginTime, Long endTime) {
         StringBuilder sb = new StringBuilder();
         sb.append("----------------------------The Total Time Used is : ");

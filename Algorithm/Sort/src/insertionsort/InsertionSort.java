@@ -23,4 +23,26 @@ public class InsertionSort {
             }
         }
     }
+
+    /**
+     * optimized insertion sort. this reduces the times of variant swap from 3 down to 1 in each round.
+     * @param array
+     */
+    public static void sortX(Comparable[] array) {
+        if(array == null || array.length <= 1) {
+            return;
+        }
+        else {
+            for(int i = 1; i < array.length; i++) {
+                Comparable currentCopy = array[i];
+                int index = i;
+
+                while(index > 0 && Utility.less(currentCopy, array[index - 1])) {
+                    array[index] = array[index - 1];
+                    index--;
+                }
+                array[index] = currentCopy;
+            }
+        }
+    }
 }
