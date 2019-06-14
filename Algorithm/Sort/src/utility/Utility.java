@@ -1,5 +1,13 @@
 package utility;
 
+import java.lang.reflect.Array;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.util.Locale;
+import java.util.Random;
+
+import static java.lang.Class.forName;
+
 public class Utility {
     public static boolean less(Comparable a, Comparable b) {
         return a.compareTo(b) < 0;
@@ -50,6 +58,43 @@ public class Utility {
         }
 
         return extremeIndex;
+    }
+
+    public static <T> T[] generateIntegerTestArray(int arrayLength, int testLowerRange,
+                                                   int testUpperRange, Class<T> tClass, Class<?> parameterTypes) {
+
+        T[] result = (T[])Array.newInstance(tClass, arrayLength);
+        try {
+            Constructor constructor = tClass.getConstructor(parameterTypes);
+            Random random = new Random();
+
+            for(int j = 0; j < arrayLength; j++) {
+                try {
+                    result[j] = (T)constructor.newInstance(random.nextInt(testUpperRange - testLowerRange + 1) + testLowerRange);
+                } catch (InstantiationException | IllegalAccessException | InvocationTargetException e) {
+                    e.printStackTrace();
+                }
+            }
+        } catch (NoSuchMethodException e) {
+            System.out.println("such constructor does not exist");
+            e.printStackTrace();
+        }
+
+        if(result == null) {
+            System.out.println("result is null");
+        }
+        else {
+            System.out.println("result is not null");
+        }
+        return result;
+    }
+
+    public static String performanceEvaluate(Long beginTime, Long endTime) {
+        StringBuilder sb = new StringBuilder();
+        sb.append("----------------------------The Total Time Used is : ");
+        sb.append((endTime - beginTime) / 1000000000.0);
+        sb.append(" S ----------------------------");
+        return sb.toString();
     }
 
     public static String print(Object[] objArray) {

@@ -1,33 +1,33 @@
 # Algorithm
-./Algorithm/Sort/.idea/
-./Algorithm/lib/
-./Algorithm/out/
-./Algorithm/test/
-./Algorithm/Sort.iml
+/Algorithm/Sort/.idea/
+/Algorithm/lib/
+/Algorithm/out/
+/Algorithm/test/
+/Algorithm/Sort.iml
 
 # Array
-./Array/.idea/
-./Array/out/
-./Array/src/META_INF/
-./Array/Array.iml
+/Array/.idea/
+/Array/out/
+/Array/src/META_INF/
+/Array/Array.iml
 
 # BinarySearchTree
-./BinarySearchTree/.idea/
-./BinarySearchTree/out/
-./BinarySearchTree/BinarySearchTree.iml
+/BinarySearchTree/.idea/
+/BinarySearchTree/out/
+/BinarySearchTree/BinarySearchTree.iml
 
 # Linkedlist
-./Linkedlist/.idea/
-./Linkedlist/jars/
-./Linkedlist/out/
-./Linkedlist/Linkedlist.iml
+/Linkedlist/.idea/
+/Linkedlist/jars/
+/Linkedlist/out/
+/Linkedlist/Linkedlist.iml
 
 # Queue
-./Queue/.idea/
-./Queue/out/
-./Queue/Queue.iml
+/Queue/.idea/
+/Queue/out/
+/Queue/Queue.iml
 
 # StackAndQueue
-./StackAndQueue/.idea/
-./StackAndQueue/out/
-./StackAndQueue/StackAndQueue.iml
+/StackAndQueue/.idea/
+/StackAndQueue/out/
+/StackAndQueue/StackAndQueue.iml
