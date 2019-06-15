@@ -8,6 +8,8 @@ import utility.Utility;
  * @date 2019/6/12
  */
 public class SelectionSort {
+    private SelectionSort() {}
+
     public static void sort(Comparable[] array) {
         if(array == null || array.length <= 1) {
             return;

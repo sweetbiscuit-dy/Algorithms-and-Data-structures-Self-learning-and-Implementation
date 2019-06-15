@@ -104,12 +104,12 @@ public class Utility {
     public static boolean isSorted(Comparable[] array, boolean ascending) {
         for(int i = 0; i < array.length - 1; i++) {
             if(ascending) {
-                if(!less(array[i], array[i + 1])) {
+                if(array[i].compareTo(array[i + 1]) > 0) {
                     return false;
                 }
             }
             else {
-                if(less(array[i], array[i + 1])) {
+                if(array[i].compareTo(array[i + 1]) < 0) {
                     return false;
                 }
             }
