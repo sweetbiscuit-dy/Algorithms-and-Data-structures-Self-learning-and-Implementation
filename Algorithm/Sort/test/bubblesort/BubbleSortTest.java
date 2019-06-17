@@ -9,7 +9,7 @@ class BubbleSortTest {
 
     @Test
     void sort() {
-        Integer[] testSet = Utility.generateTestArray(100, -100, 100, Integer.class, int.class);
+        Integer[] testSet = Utility.generateTestArray(100, -100, 100);
         System.out.println("----------------------Before Sorting----------------------");
         System.out.println(Utility.print(testSet));
         System.out.println("----------------------After Sorting-----------------------");

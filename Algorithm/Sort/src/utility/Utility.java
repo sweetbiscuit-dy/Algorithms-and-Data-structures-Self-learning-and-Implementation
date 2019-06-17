@@ -11,7 +11,7 @@ import java.util.Random;
  * @date 2019/6/14
  */
 public class Utility {
-    public static boolean less(Comparable a, Comparable b) {
+    public  boolean less(Comparable a, Comparable b) {
         return a.compareTo(b) < 0;
     }
 
@@ -65,33 +65,19 @@ public class Utility {
     /**
      * generate an array for the performance test of a particular sorting algorithm.
      * @param arrayLength
-     * @param testLowerRange
-     * @param testUpperRange
-     * @param tClass
-     * @param parameterTypes
-     * @param <T>
+     * @param lowerRange
+     * @param upperRange
      * @return
      */
-    public static <T> T[] generateTestArray(int arrayLength, int testLowerRange,
-                                                   int testUpperRange, Class<T> tClass, Class<?> parameterTypes) {
+    public static Integer[] generateTestArray(int arrayLength, int lowerRange, int upperRange) {
 
-        T[] result = (T[])Array.newInstance(tClass, arrayLength);
-        try {
-            Constructor constructor = tClass.getConstructor(parameterTypes);
-            Random random = new Random();
+        Integer[] result = new Integer[arrayLength];
 
-            for(int j = 0; j < arrayLength; j++) {
-                try {
-                    result[j] = (T)constructor.newInstance(random.nextInt(testUpperRange - testLowerRange + 1) + testLowerRange);
-                } catch (InstantiationException | IllegalAccessException | InvocationTargetException e) {
-                    e.printStackTrace();
-                }
-            }
-        } catch (NoSuchMethodException e) {
-            System.out.println("such constructor does not exist");
-            e.printStackTrace();
+        Random random = new Random();
+
+        for(int i = 0; i < arrayLength; i++) {
+            result[i] = random.nextInt(upperRange - lowerRange + 1) + lowerRange;
         }
-
         return result;
     }
 

@@ -17,7 +17,7 @@ class SelectionSortTest {
         System.out.println(Utility.print(testSet));
 
         System.out.println("----------------------Performance Test-----------------------");
-        Integer[] testCase = Utility.generateTestArray(1000, -100, 100, Integer.class, int.class);
+        Integer[] testCase = Utility.generateTestArray(1000, -100, 100);
 
         long beginTime = System.nanoTime();
         SelectionSort.sort(testCase);

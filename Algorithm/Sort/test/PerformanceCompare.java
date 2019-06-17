@@ -8,7 +8,7 @@ import java.util.Arrays;
 public class PerformanceCompare {
     @Test
     void performanceCompare() {
-        Integer[] testSet = Utility.generateTestArray(50000, -100, 100, Integer.class, int.class);
+        Integer[] testSet = Utility.generateTestArray(50000, -100, 100);
         Integer[] testSetCopy1 = Arrays.copyOf(testSet, testSet.length);
         Integer[] testSetCopy2 = Arrays.copyOf(testSet, testSet.length);
 
