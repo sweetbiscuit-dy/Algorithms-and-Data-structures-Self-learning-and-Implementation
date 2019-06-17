@@ -9,20 +9,22 @@ import utility.Utility;
  */
 public class QuickSort {
     public static void sort(Comparable[] array) {
-        sort(array, 0, array.length);
+        sort(array, 0, array.length - 1);
     }
 
     private static void sort(Comparable[] array, int left, int right) {
-        if(array == null || array.length == 1) {
-            return;
-        }
-
+        // this statement covers conditions like 'array == null || array.length == 1',
+        // so there is no need to specify the above conditions.
         if(left >= right) {
             return;
         }
 
         int partition = partition(array, left, right);
+
+        // recursive call, quick sort on the left part
         sort(array, left, partition - 1);
+
+        // recursive call, quick sort on the right part
         sort(array, partition + 1, right);
     }
 
@@ -30,10 +32,15 @@ public class QuickSort {
         // we choose the first element as the partition key.
         Comparable key = array[left];
 
-        for(int current = 1; current <= right; current++) {
+        int smallIndex = left;
+        for(int current = left + 1; current <= right; current++) {
             if(array[current].compareTo(key) < 0) {
-                Utility.swap(array, );
+                Utility.swap(array, smallIndex + 1, current);
+                smallIndex++;
             }
         }
+
+        Utility.swap(array, left, smallIndex);
+        return smallIndex;
     }
 }

@@ -11,7 +11,7 @@ import java.util.Random;
  * @date 2019/6/14
  */
 public class Utility {
-    public  boolean less(Comparable a, Comparable b) {
+    public static boolean less(Comparable a, Comparable b) {
         return a.compareTo(b) < 0;
     }
 
