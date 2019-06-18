@@ -1,7 +1,7 @@
 package mergesort;
 
 import org.junit.jupiter.api.Test;
-import sort.mergesort.MergeSort.Node;
+import mergesort.MergeSort.Node;
 import utility.Utility;
 
 class MergeSortTest {
