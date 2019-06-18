@@ -73,8 +73,23 @@ public class Utility {
         Random random = new Random();
 
         for(int i = 0; i < arrayLength; i++) {
-            result[i] = random.nextInt(upperRange - lowerRange + 1) + lowerRange;
+            result[i] = random.nextInt() % (upperRange - lowerRange + 1);
         }
+        return result;
+    }
+
+    public static Integer[] generateNearlySortedArray(int arrayLength, int lowRange, int upperRange, int swapTimes) {
+        Integer[] result = new Integer[arrayLength];
+        for(int i = 0; i < arrayLength; i++) {
+            result[i] = i;
+        }
+
+        Random random = new Random(System.nanoTime());
+
+        for(int i = 0; i < swapTimes; i++) {
+            swap(result, random.nextInt(arrayLength), random.nextInt(arrayLength));
+        }
+
         return result;
     }
 

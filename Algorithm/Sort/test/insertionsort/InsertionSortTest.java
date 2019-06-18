@@ -23,10 +23,16 @@ class InsertionSortTest {
             System.out.println("NOT correctly sorted in ascending order");
         }
         System.out.println(Utility.print(testSet));
+
+        Integer[] testSet2 = Utility.generateNearlySortedArray(1000000, -1000,1000,10);
+        long beginTime = System.nanoTime();
+        InsertionSort.sort(testSet2);
+        assert Utility.isSorted(testSet2,true);
+        long endTime = System.nanoTime();
+        System.out.println(Utility.performanceEvaluate(beginTime, endTime));
     }
 
     @Test
     void sortX() {
-
     }
 }

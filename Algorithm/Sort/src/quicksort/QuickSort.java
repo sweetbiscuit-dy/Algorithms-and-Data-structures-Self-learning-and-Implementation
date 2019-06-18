@@ -64,7 +64,7 @@ public class QuickSort {
     }
 
     public static void sortBalanced(Comparable[] array) {
-        sortBalanced(array, 0, array.length);
+        sortBalanced(array, 0, array.length - 1);
     }
 
     private static void sortBalanced(Comparable[] array, int left, int right) {
@@ -85,18 +85,20 @@ public class QuickSort {
         int notSortedHead = left + 1;
         int notSortedTail = right;
 
-        while(notSortedHead != notSortedTail) {
+        while(notSortedHead <= notSortedTail) {
             if(array[notSortedHead].compareTo(key) < 0) {
                 notSortedHead++;
             }
             else if(array[notSortedTail].compareTo(key) > 0) {
-                notSortedTail++;
+                notSortedTail--;
             }
             else {
                 Utility.swap(array, notSortedHead, notSortedTail);
+                notSortedHead++;
+                notSortedTail--;
             }
         }
-
-        return notSortedHead;
+        Utility.swap(array, left, notSortedTail);
+        return notSortedTail;
     }
 }
