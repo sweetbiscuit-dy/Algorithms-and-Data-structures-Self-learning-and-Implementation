@@ -63,6 +63,13 @@ public class QuickSort {
         return smallIndex;
     }
 
+    /**
+     * this is used when the array to be sorted has a large number of identical elements, which means even the 'partition' algorithm is
+     * refined by randomly choosing an element in the array as the 'key', the performance of the quick sort is rather intolerable.
+     * this is because the elements identical to the key are sorted together thus making one part of the sub-array after partition too 'heavy',
+     * it could reduce the method call tree to a linked list, resulting the height of the tree very large.
+     * @param array array to sorted.
+     */
     public static void sortBalanced(Comparable[] array) {
         sortBalanced(array, 0, array.length - 1);
     }
@@ -77,6 +84,13 @@ public class QuickSort {
         sortBalanced(array, partition + 1, right);
     }
 
+    /**
+     * called by sortBalanced.
+     * @param array array to be sorted
+     * @param left lower boundary of the array
+     * @param right upper boundary of the array
+     * @return the the last element's index of the sub-array whose elements are all less than the key after the partition process.
+     */
     private static int partitionBalanced(Comparable[] array, int left, int right) {
         Random random  = new Random(System.nanoTime());
         Utility.swap(array, left, random.nextInt(right - left + 1) + left);
@@ -100,5 +114,23 @@ public class QuickSort {
         }
         Utility.swap(array, left, notSortedTail);
         return notSortedTail;
+    }
+
+    public static void sort3Way(Comparable[] array) {
+        sort3Way(array, 0, array.length - 1);
+    }
+
+    private static void sort3Way(Comparable[] array, int left, int right) {
+        if(left >= right) {
+            return;
+        }
+
+        int partition = partition3Way(array, left, right);
+        sort3Way(array, left, partition - 1);
+        sort3Way(array, partition + 1, right);
+    }
+
+    private static int partition3Way(Comparable[] array, int left, int right) {
+
     }
 }
