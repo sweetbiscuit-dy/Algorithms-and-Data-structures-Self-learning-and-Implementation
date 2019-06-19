@@ -1,7 +1,10 @@
 package quicksort;
 
+import insertionsort.InsertionSort;
 import org.junit.jupiter.api.Test;
 import utility.Utility;
+
+import java.util.Arrays;
 
 class QuickSortTest {
 
@@ -20,7 +23,7 @@ class QuickSortTest {
     }
 
     @Test
-    void performanceTest() {
+    void sortBalancedPerformanceTest() {
         System.out.println("----------------------------------" +
                 "Quick Sort Performance Begin" +
                 "----------------------------------");
@@ -39,6 +42,33 @@ class QuickSortTest {
         long endTime = System.nanoTime();
         System.out.println(Utility.performanceEvaluate(beginTime,endTime));
 
+
+
+        System.out.println("----------------------------------" +
+                "Quick Sort Performance End" +
+                "----------------------------------");
+    }
+
+    @Test
+    void sort3WayPerformanceTest() {
+        System.out.println("----------------------------------" +
+                "Quick Sort Performance Begin" +
+                "----------------------------------");
+        Integer[] testSet = Utility.generateNearlySortedArray(100000,-10,10,2);
+        Integer[] testSet2 = Arrays.copyOf(testSet, testSet.length);
+
+
+
+        long beginTime = System.nanoTime();
+        QuickSort.sort(testSet2);
+        long endTime = System.nanoTime();
+        System.out.println(Utility.performanceEvaluate(beginTime,endTime));
+
+        long beginTime2 = System.nanoTime();
+        QuickSort.sort3Way(testSet);
+        assert Utility.isSorted(testSet,true);
+        long endTime2 = System.nanoTime();
+        System.out.println(Utility.performanceEvaluate(beginTime2,endTime2));
 
 
         System.out.println("----------------------------------" +

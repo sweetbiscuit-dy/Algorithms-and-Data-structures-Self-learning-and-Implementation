@@ -2,6 +2,7 @@ package quicksort;
 
 import utility.Utility;
 
+import javax.swing.plaf.synth.SynthDesktopIconUI;
 import java.util.Random;
 
 /**
@@ -125,12 +126,35 @@ public class QuickSort {
             return;
         }
 
-        int partition = partition3Way(array, left, right);
-        sort3Way(array, left, partition - 1);
-        sort3Way(array, partition + 1, right);
-    }
+        int lt = left;
+        int gt = right + 1;
 
-    private static int partition3Way(Comparable[] array, int left, int right) {
+        Random random = new Random(System.nanoTime());
 
+        Utility.swap(array, left, random.nextInt(right - left + 1) + left);
+        Comparable key = array[left];
+
+        int current = left + 1;
+
+        // we cannot use for loop here because the 'gt' is updated inside the loop,
+        // if we iterate while changing the terminate condition, there could be error.
+        while (current < gt) {
+            if(array[current].compareTo(key) < 0) {
+                Utility.swap(array, current, lt + 1);
+                lt++;
+                current++;
+            }
+            else if(array[current].compareTo(key) > 0) {
+                Utility.swap(array, current, gt - 1);
+                gt--;
+            }
+            else {
+                current++;
+            }
+        }
+        Utility.swap(array, left, lt);
+        // lt--;
+        sort3Way(array, left, lt - 1);
+        sort3Way(array, gt, right);
     }
 }
