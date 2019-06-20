@@ -282,4 +282,88 @@ public class BinarySearchTree<E extends Comparable<E>> {
 
         }
     }
+
+    /**
+     * find the max or min node of a tree.
+     * @param root the root node of a tree.
+     * @param findMax true: find the max node. false: find the min mode.
+     * @return the node found.
+     */
+    public Node findMaxMin(Node root, boolean findMax) {
+        if(root == null) {
+            return root;
+        }
+
+        Node rootCopy = root;
+        if(findMax) {
+            while(rootCopy.rightChild != null) {
+                rootCopy = rootCopy.rightChild;
+            }
+        }
+        else {
+            while(rootCopy.leftChild != null) {
+                rootCopy = rootCopy.leftChild;
+            }
+        }
+
+        return rootCopy;
+    }
+
+    /**
+     * delete the max or min node in a tree.
+     * @param root the root node of a tree.
+     * @param deleteMax true: delete the max node. false: delete the min node.
+     * @return the node deleted.
+     */
+    public Node deleteMaxMin(Node root, boolean deleteMax) {
+        if(root == null) {
+            return root;
+        }
+        Node parentNode = root;
+        Node deletedNode;
+        Node nextNode;
+
+        if(deleteMax) {
+            nextNode = parentNode.rightChild;
+            while(nextNode.rightChild != null) {
+                parentNode = nextNode;
+                nextNode = nextNode.rightChild;
+            }
+
+            if(nextNode.leftChild == null) {
+                deletedNode = nextNode;
+                parentNode.rightChild = null;
+                nextNode = null;
+            }
+            else {
+                deletedNode = nextNode;
+                parentNode.rightChild = nextNode.leftChild;
+                nextNode = null;
+            }
+        }
+        else {
+            nextNode = parentNode.leftChild;
+            while(nextNode.leftChild != null) {
+                parentNode = nextNode;
+                nextNode = nextNode.leftChild;
+            }
+
+            if(nextNode.rightChild == null) {
+                deletedNode = nextNode;
+                parentNode.leftChild = null;
+                nextNode = null;
+            }
+            else {
+                deletedNode = nextNode;
+                parentNode.leftChild = nextNode.rightChild;
+                nextNode = null;
+            }
+        }
+
+        return deletedNode;
+    }
+
+    public Node delete() {
+
+    }
 }
