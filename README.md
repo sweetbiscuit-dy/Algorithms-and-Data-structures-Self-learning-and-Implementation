@@ -29,3 +29,8 @@
 ## 6.Collection and Mapping
 
 + 
+
+## 7. New in 2022
+
+* **rewrite everything in c++ and introduce gtest**
+
